@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IMAD_Dice_Simulator.MainPage">
+			 
+ 
+    <VerticalStackLayout 
+        Spacing="25" 
+        Padding="30,0" 
+        VerticalOptions="Center">
+
+        <Label Text="Welcome!"
+                FontSize="40"
+                HorizontalTextAlignment="Center"/>
+        <Label Text="This is a dice simulator. Click roll to see what happens!"
+                HorizontalTextAlignment="Center"/>
+
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" 
+                               Spacing="10">
+            <Image x:Name="leftDice"
+                Source="six.png"
+                WidthRequest="150"
+                HeightRequest="150"
+                HorizontalOptions="CenterAndExpand"/>
+
+            <Image x:Name="rightDice"
+                Source="six.png"
+                WidthRequest="150"
+                HeightRequest="150"
+                HorizontalOptions="CenterAndExpand"/>
+
+        </HorizontalStackLayout>
+
+        <Button Text="ROLL"
+                Clicked="RollDice"/>
+
+    </VerticalStackLayout>
+
+ 
+</ContentPage>
