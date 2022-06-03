@@ -8,5 +8,8 @@
         <Color x:Key="Secondary">#f85959</Color>
         <Color x:Key="Accent">#ff9f68</Color>
         <Color x:Key="Light">#feff89</Color>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource Light}"/>
+        </Style>
     </Application.Resources>
 </Application>
